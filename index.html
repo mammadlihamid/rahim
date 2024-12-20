@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="WIN_20240605_13_24_24_Pro.jpg" alt="Image" width="300">
+
+        <div class="buttons">
+            <button onclick="playMusic('resad1.mp3')">Play Song 1</button>
+            <button onclick="playMusic('song2.mp3')">Play Song 2</button>
+            <button onclick="playMusic('song3.mp3')">Play Song 3</button>
+        </div>
+
+        <audio id="audioPlayer"></audio>
+    </div>
+
+    <script> 
+        function playMusic(song) { 
+            var audioPlayer = document.getElementById('audioPlayer'); 
+            audioPlayer.src = song; 
+            audioPlayer.play(); 
+        } 
+    </script>
+</body>
+</html>
